@@ -9,6 +9,7 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
+  await delay(20000); // 20 seconds delay to mimic slow server response
   const newContact = await req.json();
   const body = serializeApiContactPayload(newContact);
   const response = await fetch(`${API_URL}/contacts`, {
@@ -24,4 +25,8 @@ export async function POST(req: Request) {
 
   const data = await response.json();
   return Response.json(data);
+}
+
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }

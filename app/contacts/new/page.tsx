@@ -9,9 +9,11 @@ function Page() {
   const [form, setForm] = useState<ContactFormType>({ firstName: "", lastName: "", email: "", phone: "" });
   const router = useRouter();
   const [error, setError] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    setLoading(true);
     const response = await fetch("/api/contacts", {
       method: "POST",
       body: JSON.stringify(form),
@@ -21,6 +23,7 @@ function Page() {
       const error = await response.json();
       setError(error.error || "Failed to create contact");
     } else {
+      setLoading(false);
       router.push("/contacts");
     }
   };
@@ -39,6 +42,7 @@ function Page() {
           onChange={handleChange}
           onSubmit={handleSubmit}
           error={error}
+          loading={loading}
         />
       </div>
     </div>

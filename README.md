@@ -10,20 +10,19 @@ This is a Contacts management app built with [Next.js](https://nextjs.org) and T
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [homebrew](https://brew.sh/) (Optiona) package manager
+- [Node.js](https://formulae.brew.sh/formula/node)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
-- [contact-api]((https://github.com/artashio/contacts-api)
+- [contact-api](https://github.com/artashio/contacts-api)
 
 ## Getting Started
 
-Run the development server:
+Run the contact-api app. follow the instruction from [README](https://github.com/artashio/contacts-api/blob/main/README.md)
 
 ```bash
 npm install
 npm run dev
 ```
-
-run contact-api
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 

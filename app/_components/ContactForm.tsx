@@ -7,12 +7,14 @@ type Props = {
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   formData: ContactFormType;
   error: boolean
+  loading?: boolean
 };
 
-function ContactForm({ error, formData, onChange, onSubmit }: Props): JSX.Element {
+function ContactForm({ error, formData, onChange, onSubmit, loading }: Props): JSX.Element {
   return (
     <>
       <form onSubmit={onSubmit} className="formStyle" >
+        {loading && <div className="loading-message">Creating...</div>}
         {error && <div className="error-message">{error}</div>}
         <label>
           First Name
