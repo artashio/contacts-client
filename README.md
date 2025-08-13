@@ -12,7 +12,7 @@ This is a Contacts management app built with [Next.js](https://nextjs.org) and T
 
 - [Node.js](https://nodejs.org/) (v18 or newer recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
-- [contact-api]((https://github.com/artashio/contact-api)
+- [contact-api]((https://github.com/artashio/contacts-api)
 
 ## Getting Started
 
