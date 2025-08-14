@@ -13,7 +13,7 @@ This is a Contacts management app built with [Next.js](https://nextjs.org) and T
 - [homebrew](https://brew.sh/) (Optiona) package manager
 - [Node.js](https://formulae.brew.sh/formula/node)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
-- [contact-api](https://github.com/artashio/contacts-api)
+- [contacts-api](https://github.com/artashio/contacts-api)
 
 ## Getting Started
 
