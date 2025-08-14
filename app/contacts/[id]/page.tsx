@@ -66,7 +66,7 @@ function ContactDetails(): JSX.Element {
     });
     if (!response.ok) {
       const error = await response.json();
-      setError(error.error || "Failed to create contact");
+      setError(error.error || "Failed to update contact");
     } else {
       setContact(form as ContactType);
       setEditMode(false);

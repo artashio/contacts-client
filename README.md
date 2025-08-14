@@ -6,7 +6,7 @@ This is a Contacts management app built with [Next.js](https://nextjs.org) and T
 
 - View, add, edit, and delete contacts
 - See contact history
-- Responsive UI
+- Real-time UI updates using WebSockets to reflect changes made from outside the application
 
 ## Prerequisites
 
@@ -33,7 +33,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - **Add Contact:** Create a new contact
 - **Contact Details:** View, edit, and see history for a contact
 
-## Next Steps
+## Tests
 
-- Implement a test framework for automated testing
-- Add authentication and authorization
+- TODO
